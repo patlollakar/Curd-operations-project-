@@ -1,0 +1,225 @@
+2017-09-14 22:02:02.028  INFO 7204 --- [main] c.s.app.StudentCourseAppApplication      : Starting StudentCourseAppApplication on SRIPALLE with PID 7204 (C:\Users\Harish\Documents\workspace-sts-3.9.0.RELEASE\StudentCourseApp\target\classes started by Harish in C:\Users\Harish\Documents\workspace-sts-3.9.0.RELEASE\StudentCourseApp)
+2017-09-14 22:02:02.046  INFO 7204 --- [main] c.s.app.StudentCourseAppApplication      : No active profile set, falling back to default profiles: default
+2017-09-14 22:02:02.488  INFO 7204 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64c87930: startup date [Thu Sep 14 22:02:02 CDT 2017]; root of context hierarchy
+2017-09-14 22:02:07.366  INFO 7204 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-14 22:02:07.390  INFO 7204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-14 22:02:07.392  INFO 7204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-14 22:02:07.799  INFO 7204 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-14 22:02:07.800  INFO 7204 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5587 ms
+2017-09-14 22:02:08.029  INFO 7204 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-14 22:02:08.036  INFO 7204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-14 22:02:08.046  INFO 7204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-14 22:02:08.046  INFO 7204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-14 22:02:08.047  INFO 7204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-14 22:02:09.883  INFO 7204 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-14 22:02:09.920  INFO 7204 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-14 22:02:10.063  INFO 7204 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-14 22:02:10.066  INFO 7204 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-14 22:02:10.068  INFO 7204 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-14 22:02:10.173  INFO 7204 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-14 22:02:10.504  INFO 7204 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-14 22:02:12.922  INFO 7204 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-09-14 22:02:14.060  INFO 7204 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-14 22:02:15.166  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64c87930: startup date [Thu Sep 14 22:02:02 CDT 2017]; root of context hierarchy
+2017-09-14 22:02:15.273  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses],methods=[POST]}" onto public com.studentcourse.app.model.Course com.studentcourse.app.controller.CourseController.createCourse(com.studentcourse.app.model.Course) throws java.lang.Exception
+2017-09-14 22:02:15.275  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses],methods=[PUT]}" onto public com.studentcourse.app.model.Course com.studentcourse.app.controller.CourseController.updateCourse(com.studentcourse.app.model.Course) throws java.lang.Exception
+2017-09-14 22:02:15.276  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses/{courseId}],methods=[GET]}" onto public com.studentcourse.app.model.Course com.studentcourse.app.controller.CourseController.getCourseById(java.lang.String) throws java.lang.Exception
+2017-09-14 22:02:15.277  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses],methods=[GET]}" onto public java.util.List<com.studentcourse.app.model.Course> com.studentcourse.app.controller.CourseController.getAllStudents() throws java.lang.Exception
+2017-09-14 22:02:15.278  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses/{courseId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.studentcourse.app.controller.CourseController.deleteCourse(java.lang.String) throws java.lang.Exception
+2017-09-14 22:02:15.281  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students/{studentId}],methods=[GET]}" onto public com.studentcourse.app.model.Student com.studentcourse.app.controller.StudentController.getStudentById(java.lang.Long) throws java.lang.Exception
+2017-09-14 22:02:15.282  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students/{studentId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.studentcourse.app.controller.StudentController.deleteStudent(java.lang.Long) throws java.lang.Exception
+2017-09-14 22:02:15.282  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students],methods=[POST]}" onto public com.studentcourse.app.model.Student com.studentcourse.app.controller.StudentController.createStudent(com.studentcourse.app.model.Student) throws java.lang.Exception
+2017-09-14 22:02:15.283  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students],methods=[GET]}" onto public java.util.List<com.studentcourse.app.model.Student> com.studentcourse.app.controller.StudentController.getAllStudents() throws java.lang.Exception
+2017-09-14 22:02:15.284  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students],methods=[PUT]}" onto public com.studentcourse.app.model.Student com.studentcourse.app.controller.StudentController.updateStudent(com.studentcourse.app.model.Student) throws java.lang.Exception
+2017-09-14 22:02:15.288  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-14 22:02:15.289  INFO 7204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-14 22:02:15.341  INFO 7204 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 22:02:15.341  INFO 7204 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 22:02:15.419  INFO 7204 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 22:02:15.855  INFO 7204 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-14 22:02:16.078  INFO 7204 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-14 22:02:16.097  INFO 7204 --- [main] c.s.app.StudentCourseAppApplication      : Started StudentCourseAppApplication in 15.801 seconds (JVM running for 21.032)
+2017-09-14 22:02:40.431  INFO 7204 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 22:02:40.432  INFO 7204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-14 22:02:40.580  INFO 7204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 146 ms
+2017-09-14 22:02:40.964  INFO 7204 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-14 22:08:55.644  INFO 11892 --- [main] c.s.a.StudentCourseAppApplication        : Starting StudentCourseAppApplication on SRIPALLE with PID 11892 (C:\Users\Harish\Documents\workspace-sts-3.9.0.RELEASE\StudentCourseApp\target\classes started by Harish in C:\Users\Harish\Documents\workspace-sts-3.9.0.RELEASE\StudentCourseApp)
+2017-09-14 22:08:55.644  INFO 11892 --- [main] c.s.a.StudentCourseAppApplication        : No active profile set, falling back to default profiles: default
+2017-09-14 22:08:55.728  INFO 11892 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2aceadd4: startup date [Thu Sep 14 22:08:55 CDT 2017]; root of context hierarchy
+2017-09-14 22:08:57.732  INFO 11892 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-14 22:08:57.735  INFO 11892 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2017-09-14 22:08:57.735  INFO 11892 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-14 22:08:57.976  INFO 11892 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-09-14 22:08:57.977  INFO 11892 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2253 ms
+2017-09-14 22:08:58.194  INFO 11892 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-14 22:08:58.199  INFO 11892 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-14 22:08:58.200  INFO 11892 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-14 22:08:58.200  INFO 11892 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-14 22:08:58.201  INFO 11892 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-14 22:08:59.701  INFO 11892 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-14 22:08:59.720  INFO 11892 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-14 22:08:59.912  INFO 11892 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-14 22:08:59.912  INFO 11892 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2017-09-14 22:08:59.912  INFO 11892 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2017-09-14 22:09:00.041  INFO 11892 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-14 22:09:00.693  INFO 11892 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-14 22:09:01.985  INFO 11892 --- [main] o.h.t.h.SchemaUpdate                     : HHH000228: Running hbm2ddl schema update
+2017-09-14 22:09:02.235  INFO 11892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-14 22:09:03.057  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2aceadd4: startup date [Thu Sep 14 22:08:55 CDT 2017]; root of context hierarchy
+2017-09-14 22:09:03.156  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses/{courseId}],methods=[GET]}" onto public com.studentcourse.app.model.Course com.studentcourse.app.controller.CourseController.getCourseById(java.lang.String) throws java.lang.Exception
+2017-09-14 22:09:03.156  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses],methods=[GET]}" onto public java.util.List<com.studentcourse.app.model.Course> com.studentcourse.app.controller.CourseController.getAllStudents() throws java.lang.Exception
+2017-09-14 22:09:03.156  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses/{courseId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.studentcourse.app.controller.CourseController.deleteCourse(java.lang.String) throws java.lang.Exception
+2017-09-14 22:09:03.156  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses],methods=[PUT]}" onto public com.studentcourse.app.model.Course com.studentcourse.app.controller.CourseController.updateCourse(com.studentcourse.app.model.Course) throws java.lang.Exception
+2017-09-14 22:09:03.156  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses],methods=[POST]}" onto public com.studentcourse.app.model.Course com.studentcourse.app.controller.CourseController.createCourse(com.studentcourse.app.model.Course) throws java.lang.Exception
+2017-09-14 22:09:03.156  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students],methods=[GET]}" onto public java.util.List<com.studentcourse.app.model.Student> com.studentcourse.app.controller.StudentController.getAllStudents() throws java.lang.Exception
+2017-09-14 22:09:03.156  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students/{studentId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.studentcourse.app.controller.StudentController.deleteStudent(java.lang.Long) throws java.lang.Exception
+2017-09-14 22:09:03.156  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students],methods=[POST]}" onto public com.studentcourse.app.model.Student com.studentcourse.app.controller.StudentController.createStudent(com.studentcourse.app.model.Student) throws java.lang.Exception
+2017-09-14 22:09:03.156  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students],methods=[PUT]}" onto public com.studentcourse.app.model.Student com.studentcourse.app.controller.StudentController.updateStudent(com.studentcourse.app.model.Student) throws java.lang.Exception
+2017-09-14 22:09:03.156  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students/{studentId}],methods=[GET]}" onto public com.studentcourse.app.model.Student com.studentcourse.app.controller.StudentController.getStudentById(java.lang.Long) throws java.lang.Exception
+2017-09-14 22:09:03.156  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-14 22:09:03.172  INFO 11892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-14 22:09:03.219  INFO 11892 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 22:09:03.220  INFO 11892 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 22:09:03.277  INFO 11892 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 22:09:03.830  INFO 11892 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-14 22:09:04.073 ERROR 11892 --- [main] o.a.c.h.Http11NioProtocol                : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_144]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_144]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_144]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[?:1.8.0_144]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[?:1.8.0_144]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at com.studentcourse.app.StudentCourseAppApplication.main(StudentCourseAppApplication.java:10) [classes/:?]
+
+2017-09-14 22:09:04.096 ERROR 11892 --- [main] o.a.c.c.StandardService                  : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at com.studentcourse.app.StudentCourseAppApplication.main(StudentCourseAppApplication.java:10) [classes/:?]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	... 13 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_144]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_144]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_144]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[?:1.8.0_144]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[?:1.8.0_144]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	... 13 more
+
+2017-09-14 22:09:04.128  INFO 11892 --- [main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2017-09-14 22:09:04.189  INFO 11892 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-09-14 22:09:04.197 ERROR 11892 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2017-09-14 22:09:04.225  INFO 11892 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2aceadd4: startup date [Thu Sep 14 22:08:55 CDT 2017]; root of context hierarchy
+2017-09-14 22:09:04.227  INFO 11892 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-14 22:09:04.229  INFO 11892 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-14 22:09:31.876  INFO 7204 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-14 22:09:31.891  INFO 7204 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64c87930: startup date [Thu Sep 14 22:02:02 CDT 2017]; root of context hierarchy
+2017-09-14 22:09:31.892  INFO 7204 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-14 22:09:31.892  INFO 7204 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-14 22:09:40.510  INFO 5856 --- [main] c.s.a.StudentCourseAppApplication        : Starting StudentCourseAppApplication on SRIPALLE with PID 5856 (C:\Users\Harish\Documents\workspace-sts-3.9.0.RELEASE\StudentCourseApp\target\classes started by Harish in C:\Users\Harish\Documents\workspace-sts-3.9.0.RELEASE\StudentCourseApp)
+2017-09-14 22:09:40.526  INFO 5856 --- [main] c.s.a.StudentCourseAppApplication        : No active profile set, falling back to default profiles: default
+2017-09-14 22:09:40.589  INFO 5856 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2aceadd4: startup date [Thu Sep 14 22:09:40 CDT 2017]; root of context hierarchy
+2017-09-14 22:09:42.573  INFO 5856 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-14 22:09:42.586  INFO 5856 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2017-09-14 22:09:42.602  INFO 5856 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-14 22:09:42.819  INFO 5856 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-09-14 22:09:42.819  INFO 5856 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2230 ms
+2017-09-14 22:09:43.041  INFO 5856 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-14 22:09:43.041  INFO 5856 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-14 22:09:43.041  INFO 5856 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-14 22:09:43.041  INFO 5856 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-14 22:09:43.041  INFO 5856 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-14 22:09:43.846  INFO 5856 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-14 22:09:43.862  INFO 5856 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-14 22:09:43.962  INFO 5856 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-14 22:09:43.965  INFO 5856 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2017-09-14 22:09:43.967  INFO 5856 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2017-09-14 22:09:44.010  INFO 5856 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-14 22:09:44.167  INFO 5856 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-14 22:09:45.119  INFO 5856 --- [main] o.h.t.h.SchemaUpdate                     : HHH000228: Running hbm2ddl schema update
+2017-09-14 22:09:45.267  INFO 5856 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-14 22:09:45.892  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2aceadd4: startup date [Thu Sep 14 22:09:40 CDT 2017]; root of context hierarchy
+2017-09-14 22:09:45.995  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses/{courseId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.studentcourse.app.controller.CourseController.deleteCourse(java.lang.String) throws java.lang.Exception
+2017-09-14 22:09:45.995  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses],methods=[GET]}" onto public java.util.List<com.studentcourse.app.model.Course> com.studentcourse.app.controller.CourseController.getAllStudents() throws java.lang.Exception
+2017-09-14 22:09:45.995  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses],methods=[PUT]}" onto public com.studentcourse.app.model.Course com.studentcourse.app.controller.CourseController.updateCourse(com.studentcourse.app.model.Course) throws java.lang.Exception
+2017-09-14 22:09:45.995  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses],methods=[POST]}" onto public com.studentcourse.app.model.Course com.studentcourse.app.controller.CourseController.createCourse(com.studentcourse.app.model.Course) throws java.lang.Exception
+2017-09-14 22:09:45.995  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/courses/{courseId}],methods=[GET]}" onto public com.studentcourse.app.model.Course com.studentcourse.app.controller.CourseController.getCourseById(java.lang.String) throws java.lang.Exception
+2017-09-14 22:09:45.995  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students],methods=[PUT]}" onto public com.studentcourse.app.model.Student com.studentcourse.app.controller.StudentController.updateStudent(com.studentcourse.app.model.Student) throws java.lang.Exception
+2017-09-14 22:09:45.995  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students],methods=[GET]}" onto public java.util.List<com.studentcourse.app.model.Student> com.studentcourse.app.controller.StudentController.getAllStudents() throws java.lang.Exception
+2017-09-14 22:09:45.995  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students/{studentId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.studentcourse.app.controller.StudentController.deleteStudent(java.lang.Long) throws java.lang.Exception
+2017-09-14 22:09:45.995  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students],methods=[POST]}" onto public com.studentcourse.app.model.Student com.studentcourse.app.controller.StudentController.createStudent(com.studentcourse.app.model.Student) throws java.lang.Exception
+2017-09-14 22:09:45.995  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/students/{studentId}],methods=[GET]}" onto public com.studentcourse.app.model.Student com.studentcourse.app.controller.StudentController.getStudentById(java.lang.Long) throws java.lang.Exception
+2017-09-14 22:09:45.995  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-14 22:09:46.010  INFO 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-14 22:09:46.057  INFO 5856 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 22:09:46.057  INFO 5856 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 22:09:46.120  INFO 5856 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 22:09:46.495  INFO 5856 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-14 22:09:46.687  INFO 5856 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-14 22:09:46.696  INFO 5856 --- [main] c.s.a.StudentCourseAppApplication        : Started StudentCourseAppApplication in 6.621 seconds (JVM running for 8.063)
+2017-09-14 22:09:54.851  INFO 5856 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 22:09:54.851  INFO 5856 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-14 22:09:54.882  INFO 5856 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2017-09-14 22:09:55.045  INFO 5856 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-14 22:23:46.736  INFO 5856 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-14 22:23:46.740  INFO 5856 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2aceadd4: startup date [Thu Sep 14 22:09:40 CDT 2017]; root of context hierarchy
+2017-09-14 22:23:46.768  INFO 5856 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-14 22:23:46.772  INFO 5856 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
